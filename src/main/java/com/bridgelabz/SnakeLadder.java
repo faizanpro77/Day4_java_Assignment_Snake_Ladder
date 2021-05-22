@@ -9,7 +9,6 @@ public class SnakeLadder {
         System.out.println("Welcome  to snake & ladder game");
         //Starting position of player
         int  playerPosition = 0;
-        int count = 1;
         System.out.println("Starting position of player : "+playerPosition);
         for(int dice = 1; playerPosition < winningPoints; dice++) {
             //To print random variables between 1-6 as dies
@@ -31,8 +30,11 @@ public class SnakeLadder {
             playerPosition += result;
             if(playerPosition < 0)
                 playerPosition = 0;
-            count++;
+            //To find exact position 100 of player
+            if(playerPosition > 100)
+                playerPosition = playerPosition - result;
         }
-        System.out.println("Posotoin of player : " + playerPosition + " Winner" + "\n" + "number of time dice rolled : " + count);
+        System.out.println("Position of player : " + playerPosition + " Winner");
     }
 }
+
