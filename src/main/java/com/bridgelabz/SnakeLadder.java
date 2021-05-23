@@ -1,6 +1,7 @@
 package com.bridgelabz;
 
 public class SnakeLadder {
+    public static final int notPlay = 0;
     public static final int ladder1 = 5;
     public static final int ladder2 = 9;
     public static final int ladder3 = 20;
@@ -39,6 +40,10 @@ public class SnakeLadder {
                     break;
                 case snake3:
                     result -= 17;
+                    break;
+                case notPlay:
+                    System.out.println("not play");
+                    result = 0;
                     break;
                 default:
                     result = random;
