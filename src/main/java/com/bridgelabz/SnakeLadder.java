@@ -18,15 +18,15 @@ public class SnakeLadder {
         //To check ladder or snake
         switch (check) {
             case LADDER:
-            result += die;
-            break;
+                result += die;
+                break;
             case SNAKE:
-            result -= die;
-            break;
+                result -= die;
+                break;
             case NOT_PLAY:
-        System.out.println("not play");
-        result = 0;
-        break;
+                System.out.println("not play");
+                result = 0;
+                break;
         }
         playerPosition += result;
         System.out.println("Position of player : " + playerPosition);
