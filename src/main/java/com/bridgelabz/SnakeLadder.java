@@ -4,14 +4,14 @@ public class SnakeLadder {
     public static final int LADDER = 1;
     public static final int SNAKE = 2;
     public static final int NOT_PLAY = 3;
-    public static final int winningPoints = 100;
+    public static final int WINNING_POSITION = 100;
 
     public static void main(String[] args) {
         System.out.println("Welcome  to snake & ladder game");
         //Starting position of player
         int  playerPosition = 0;
         System.out.println("Starting position of player : "+playerPosition);
-        for(int dice = 1; playerPosition < winningPoints; dice++) {
+        for(int dice = 1; playerPosition < WINNING_POSITION; dice++) {
             //To print random variables between 1-6 as dies
             int die = (int) (Math.random() * 6) + 1;
             //Random values to set ladder and snake
